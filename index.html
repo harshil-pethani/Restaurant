@@ -8,6 +8,7 @@
     <title>Restaurant Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/e508673066.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,14 +19,9 @@
         </div>
         <div class="locationBox">
             <i class="fas fa-map-marker-alt"></i>
-            <select name="cars" id="cars">
-                <option value="London">London</option>
-                <option value="India">India</option>
-                <option value="America">America</option>
-                <option value="Russia">Russia</option>
-            </select>
+            <input type="text" class="drop" placeholder="Search for City">
             <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search For a Restaurants, cuisine or a dish">
+            | <input type="text" placeholder="Search For a Restaurants, cuisine or a dish">
             <button>Find Food</button>
         </div>
         <ul>
@@ -36,9 +32,9 @@
 
     <header>
         <div class="header-content">
-            <h3>Baba Jaan Biryani House</h3>
+            <h3 data-aos="fade-down">Baba Jaan Biryani House</h3>
             <div class="content">
-                <div class="left">
+                <div class="left" data-aos="fade-down">
                     <div class="review">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -59,7 +55,7 @@
                         <p>Vesu, Piplod</p>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-down">
                     <!-- <div class="timing"> -->
                     <p><span>Open Now </span> - 11am - 11pm (Today) <i class="fas fa-info-circle"></i></p>
                     <!-- </div> -->
@@ -79,18 +75,18 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr data-aos="fade-right" data-aos-offset="0">
             <div class="btns">
-                <div class="btn">
+                <div class="btn" data-aos="fade-up" data-aos-offset="0">
                     <a href=""><i class="fas fa-star"></i> Add Review</a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="fade-up" data-aos-offset="0">
                     <a href=""><i class="fas fa-directions"></i> Direction</a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="fade-up" data-aos-offset="0">
                     <a href=""><i class="far fa-bookmark"></i> Bookmark</a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="fade-up" data-aos-offset="0">
                     <a href=""><i class="far fa-share-square"></i> Share</a>
                 </div>
             </div>
@@ -98,7 +94,7 @@
     </header>
 
     <section>
-        <div class="navigation">
+        <div class="navigation" data-aos="fade-down">
             <ul>
                 <li>
                     <a href="#" id="active">
@@ -129,23 +125,23 @@
         </div>
         <div class="section-content">
             <div class="left">
-                <h3>About this Place</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa nostrum quos architecto ullam, magnam
+                <h3 data-aos="fade-right">About this Place</h3>
+                <p data-aos="fade-right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa nostrum quos architecto ullam, magnam
                     accusamus veritatis tenetur velit distinctio porro enim numquam esse recusandae in? Voluptatum non,
                     velit eaque laboriosam assumenda ut. Exercitationem, illo maiores!</p>
 
                 <div class="menu">
-                    <h4>Menu</h4>
-                    <a href="#">See All Items <i class="fas fa-chevron-circle-right"></i></a>
+                    <h4 data-aos="fade-right">Menu</h4>
+                    <a href="#" data-aos="fade-right">See All Items <i class="fas fa-chevron-circle-right"></i></a>
                 </div>
                 <div class="images">
-                    <img src="img/item4.jpg" alt="">
-                    <img src="img/item2.jpg" alt="">
-                    <img src="img/item5.jpg" alt="">
+                    <img src="img/item4.jpg" alt="" data-aos="flip-up">
+                    <img src="img/item2.jpg" alt="" data-aos="flip-up">
+                    <img src="img/item5.jpg" alt="" data-aos="flip-up">
                 </div>
             </div>
             <div class="right">
-                <div class="card">
+                <div class="card" data-aos="flip-up">
                     <div class="upr">
                         <div class="call">
                             <h3>Call</h3>
@@ -174,30 +170,30 @@
     </section>
 
     <div class="moreInfo">
-        <h3>Cuisines</h3>
+        <h3 data-aos="fade-right">Cuisines</h3>
         <div class="btns">
-            <button>Indian</button>
-            <button>Fast Food</button>
-            <button>South Indian</button>
+            <button data-aos="zoom-in">Indian</button>
+            <button data-aos="zoom-in">Fast Food</button>
+            <button data-aos="zoom-in">South Indian</button>
         </div>
-        <h3>More Info</h3>
+        <h3 data-aos="fade-right">More Info</h3>
         <div class="checks">
-            <div class="check">
+            <div class="check" data-aos="zoom-in">
                 <i class="far fa-check-circle"></i>
                 Home Delivery
             </div>
-            <div class="check">
+            <div class="check" data-aos="zoom-in">
                 <i class="far fa-check-circle"></i>
                 Free Parking
             </div>
-            <div class="check">
+            <div class="check" data-aos="zoom-in">
                 <i class="far fa-check-circle"></i>
                 Indor Seating
             </div>
         </div>
-        <h3>Similar Restaurants</h3>
+        <h3 data-aos="fade-right">Similar Restaurants</h3>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <img src="img/Image -57.png" alt="">
                 <div class="content">
                     <i class="fas fa-heart"></i>
@@ -218,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <img src="img/Image -57.png" alt="">
                 <div class="content">
                     <i class="fas fa-heart"></i>
@@ -239,7 +235,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <img src="img/Image -57.png" alt="">
                 <div class="content">
                     <i class="fas fa-heart"></i>
@@ -261,7 +257,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <div class="left">
                 <h3>Have a Restaurant ?</h3>
                 <p>Are you Restaurant in reward gogo</p>
@@ -276,24 +272,25 @@
     </div>
 
     <div class="experience">
-        <p>Rate Your Experience for</p>
-        <input type="radio" name="experience" value="Dining" checked id="Dining">
-        <label for="Dining">Dining</label>
-        <input type="radio" name="experience" value="Delivery" id="Delivery">
-        <label for="Delivery">Delivery</label>
+        <div data-aos="fade-right">
+            <p>Rate Your Experience for</p>
+            <input type="radio" name="experience" value="Dining" checked id="Dining">
+            <label for="Dining">Dining</label>
+            <input type="radio" name="experience" value="Delivery" id="Delivery">
+            <label for="Delivery">Delivery</label>
+        </div>
+        <i class="far fa-star" data-aos="fade-right"></i>
+        <i class="far fa-star" data-aos="fade-right"></i>
+        <i class="far fa-star" data-aos="fade-right"></i>
+        <i class="far fa-star" data-aos="fade-right"></i>
+        <i class="far fa-star" data-aos="fade-right"></i>
         <br>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
-        <br>
-        <div class="writeReview">
+        <div class="writeReview" data-aos="fade-right">
             <span>Write Your Review <i class="fas fa-arrow-right"></i></span>
             <input type="text">
         </div>
         <div class="reviews">
-            <div class="review">
+            <div class="review" data-aos="fade-right">
                 <div class="head">
                     <div class="img">
                         <img src="img/user1.jpg" alt="">
@@ -322,7 +319,7 @@
                     <i class="far fa-share-square"> Share</i>
                 </div>
             </div>
-            <div class="review">
+            <div class="review" data-aos="fade-right">
                 <div class="head">
                     <div class="img">
                         <img src="img/user2.jpg" alt="">
@@ -356,9 +353,9 @@
     </div>
 
     <footer>
-        <h3>Reward GoGo</h3>
+        <h3 data-aos="fade-right">Reward GoGo</h3>
         <div class="detail">
-            <div class="company">
+            <div class="company" data-aos="zoom-in">
                 <h4>Company</h4>
                 <p>Who We Are</p>
                 <p>How You Can Help</p>
@@ -368,14 +365,14 @@
                 <p>Contact</p>
                 <p>Financial Information</p>
             </div>
-            <div class="foodies">
+            <div class="foodies" data-aos="zoom-in">
                 <h4>For Foodies</h4>
                 <p>Code of Conduct</p>
                 <p>Community</p>
                 <p>Blogger help</p>
                 <p>Mobile Apps</p>
             </div>
-            <div class="restaurants">
+            <div class="restaurants" data-aos="zoom-in">
                 <h4>For Restaurants</h4>
                 <p>Add Restaurant</p>
                 <p>Claim Your Listing</p>
@@ -383,14 +380,14 @@
                 <p>Restaurant Widgets</p>
                 <p>Product For Businesses</p>
             </div>
-            <div class="forYou">
+            <div class="forYou" data-aos="zoom-in">
                 <h4>For You</h4>
                 <p>Privacy</p>
                 <p>Term</p>
                 <p>Security</p>
                 <p>SiteMap</p>
             </div>
-            <div class="socialLinks">
+            <div class="socialLinks" data-aos="zoom-in">
                 <h4>Social Links</h4>
                 <div class="linkButtons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -403,6 +400,13 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
     <script src="main.js"></script>
 </body>
 
